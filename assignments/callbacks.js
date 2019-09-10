@@ -37,14 +37,18 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
   const test2 = firstItem(items, logExorbitantPrice);
   console.log(test2); // "this Pencil is worth a million dollars!"
 */
+let FirstProblem = getLength(items, () => items.length);
 
-
-function getLength(arr, cb) {
-  // getLength passes the length of the array into the callback.
+function getLength(array,cb) {
+// getLength passes the length of the array into the callback.
+return cb(array.length);
 }
+console.log(FirstProblem);
 
+let SecondProblem = last(items)
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
+  
 }
 
 function sumNums(x, y, cb) {
